@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vickythegme - Jquery Custom Form Validation</title>
+	<meta charset=utf-8>
+	<meta name=description content="Unknown Project">
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<script src="http://code.jquery.com/jquery-1.11.2.js"></script>
+	<script src="validate.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			validate("testform","testerr"); 
+			//formclassname = testform
+			//formerrordivclass = testerr
+		});
+
+	</script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				
+				<div class="testerr">
+					
+				</div>
+				<form action="" method="post" accept-charset="utf-8" class="testform">
+					<input type="text" name="" value="" placeholder="Enter Name"  data-type="name" data-min-length="6"/>
+					<input type="text" name="" value="" placeholder="Enter Special Characters" data-type="noschar">
+					<input type="email" name="" value="" placeholder="Enter Email" data-type="email">
+					<input type="text" name="" value="" placeholder="" data-type="number" >
+					<input type="password" name="" value="" placeholder="" data-type="password" data-min-length="6">
+					<input type="password" name="" value="" placeholder="" data-type="cpassword" data-min-length="6">
+					<select name="testsel" data-type="select">
+						<option value=""></option>
+						option
+					</select>
+					<input type="button" data-type="submit" value="Submit">
+				</form> 
+			</div>
+		</div>
+	</div>
+</body>
+</html>
